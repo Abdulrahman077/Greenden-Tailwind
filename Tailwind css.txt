@@ -1,0 +1,12 @@
+what is tailwind css?
+    namma html la oru button create atha css la style panrathuku pathilla tailwind la ulla default option try pannla i mean tailwind la button with style already irukum.
+
+what is CDN?
+    CDN stands for Content Delivery Network. 
+    in simple terms, a CDN is a network of distributed servers strategically placed around the world to deliver web Content
+    (like images, stylesheets, scripts and videos) more efficiently to users.
+    ex:<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+Bootstrap Vs Tailwind?
+    - Bootstrap has pre-designed styles.
+    - Tailwind lets you create styles using small utility classes.

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bring a little more green into your home with Greenden plants and flowers.">
+    <title>Greenden | A little plant journal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+    <!-- Design idea: a plant journal with forest green and fresh green details. -->
+    <!-- Shared navigation -->
+    <nav class="bg-green-900 border-b-4 border-green-400 p-3 shadow-md sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="group flex flex-shrink-0 items-center text-white">
+                <span
+                    class="inline-flex items-center justify-center w-11 h-11 mr-3 rounded-2xl bg-green-300 border border-green-200 text-green-900 text-xl shadow-md transform group-hover:rotate-6 transition duration-300"
+                    aria-hidden="true">🌿</span>
+                <span class="flex flex-col leading-none">
+                    <span class="text-2xl font-extrabold tracking-tight">Green<span
+                            class="text-green-300">den</span></span>
+                    <span class="mt-1 text-xs font-semibold uppercase tracking-widest text-green-200">Plants · flowers ·
+                        home</span>
+                </span>
+            </a>
+            <details class="relative md:hidden">
+                <summary
+                    class="flex items-center cursor-pointer list-none text-white p-2 rounded-lg hover:bg-gray-800 focus:outline-none transition duration-200">
+                    <span class="sr-only">Open navigation menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </summary>
+                <ul
+                    class="absolute right-0 top-full mt-3 w-48 bg-white border border-green-200 rounded-xl shadow-lg py-2">
+                    <li><a class="block px-4 py-2 bg-green-100 text-green-900 font-semibold" href="index.html"
+                            aria-current="page">Home</a></li>
+                    <li><a class="block px-4 py-2 text-gray-700 hover:bg-green-50" href="products.html">Products</a>
+                    </li>
+                    <li><a class="block px-4 py-2 text-gray-700 hover:bg-green-50" href="contact.html">Contact</a></li>
+                </ul>
+            </details>
+            <ul
+                class="hidden md:flex md:items-center md:space-x-1 bg-green-800 border border-green-700 rounded-full p-1 text-sm md:text-base shadow-inner">
+                <li><a class="inline-block bg-green-300 text-green-900 font-semibold px-4 py-2 rounded-full shadow-sm"
+                        href="index.html" aria-current="page">Home</a></li>
+                <li><a class="inline-block text-green-50 font-semibold px-4 py-2 rounded-full hover:bg-green-300 hover:text-green-900 focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-200"
+                        href="products.html">Products</a></li>
+                <li><a class="inline-block text-green-50 font-semibold px-4 py-2 rounded-full hover:bg-green-300 hover:text-green-900 focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-200"
+                        href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="bg-green-50 px-5 py-12 md:py-20">
+            <div
+                class="max-w-6xl mx-auto grid lg:grid-cols-2 bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="px-7 py-10 sm:px-10 lg:px-12 lg:py-14">
+                    <p
+                        class="inline-flex items-center bg-green-100 border border-green-200 text-green-900 rounded-full px-4 py-2 text-sm font-bold tracking-wide">
+                        <span class="w-2 h-2 bg-green-900 rounded-full mr-2" aria-hidden="true"></span>
+                        A LITTLE MORE GREEN, EVERY DAY
+                    </p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-green-900 leading-tight mt-5">Bring a
+                        little <span class="text-green-700">nature</span> home.</h1>
+                    <p class="mt-5 text-gray-700 text-lg leading-relaxed">Discover easy-care plants and thoughtful
+                        flower arrangements that help every room feel fresh, calm, and alive.</p>
+                    <div class="mt-7 flex flex-col sm:flex-row gap-3">
+                        <a href="products.html"
+                            class="inline-block text-center bg-green-900 text-white px-6 py-3 rounded-lg font-bold shadow-md hover:bg-green-800 transition duration-200">Browse
+                            our plants</a>
+                        <a href="#about"
+                            class="inline-block text-center border-2 border-green-900 text-green-900 px-6 py-3 rounded-lg font-semibold hover:bg-white transition duration-200">Why
+                            Greenden?</a>
+                    </div>
+                    <div class="mt-9 pt-6 border-t border-green-200 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-md">
+                        <div
+                            class="bg-white border border-green-100 border-l-4 border-l-green-500 rounded-xl p-3 shadow-sm">
+                            <p class="text-xs font-bold uppercase tracking-wide text-green-700">01 / indoors</p>
+                            <p class="text-sm font-bold text-green-900 mt-1">Houseplants</p>
+                            <p class="text-xs text-gray-600 mt-1">for indoor spaces</p>
+                        </div>
+                        <div
+                            class="bg-white border border-green-100 border-l-4 border-l-green-400 rounded-xl p-3 shadow-sm">
+                            <p class="text-xs font-bold uppercase tracking-wide text-green-700">02 / blooms</p>
+                            <p class="text-sm font-bold text-green-900 mt-1">Fresh flowers</p>
+                            <p class="text-xs text-gray-600 mt-1">bouquets and vases</p>
+                        </div>
+                        <div
+                            class="bg-white border border-green-100 border-l-4 border-l-green-700 rounded-xl p-3 shadow-sm">
+                            <p class="text-xs font-bold uppercase tracking-wide text-green-700">03 / gifting</p>
+                            <p class="text-sm font-bold text-green-900 mt-1">Gift ideas</p>
+                            <p class="text-xs text-gray-600 mt-1">for every occasion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative h-72 sm:h-96 lg:h-auto bg-gray-100">
+                    <img src="images/pot1.avif" alt="Green plant in a white pot" class="w-full h-full object-cover">
+                    <div
+                        class="absolute top-5 right-5 bg-green-900 border border-white text-white text-xs font-bold tracking-wide px-4 py-2 rounded-full shadow-lg">
+                        EASY-CARE PICK</div>
+                    <div
+                        class="absolute bottom-5 left-5 bg-white border-l-4 border-green-700 rounded-xl px-5 py-4 shadow-xl">
+                        <p class="text-xs uppercase tracking-wide text-green-700 font-bold">A little leaf note</p>
+                        <p class="text-green-900 font-bold mt-1">Start with one plant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="bg-white px-5 py-20 md:py-28">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto">
+                    <p
+                        class="inline-block bg-green-100 border border-green-200 text-green-900 font-bold text-sm tracking-wide rounded-full px-4 py-2">
+                        WHY GREENDEN</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-900 mt-2">A greener home starts with Greenden
+                    </h2>
+                    <p class="text-gray-600 mt-3 leading-relaxed">A little plant care can make a big difference. We make
+                        it easy to find the right green for your space.</p>
+                    <div class="w-16 h-1 bg-green-500 rounded-full mx-auto mt-5"></div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mt-14">
+                    <div
+                        class="bg-green-100 border border-green-300 border-b-4 border-b-green-600 rounded-2xl p-7 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-200">
+                        <div class="flex items-start justify-between">
+                            <div class="h-14 w-14 flex items-center justify-center rounded-2xl bg-green-100 border border-green-200 text-3xl shadow-sm"
+                                aria-hidden="true">🌿</div>
+                            <span class="text-4xl font-bold text-green-900" aria-hidden="true">01</span>
+                        </div>
+                        <p class="text-xs text-green-800 font-bold uppercase tracking-wide mt-5">Our collection</p>
+                        <h3 class="text-xl font-bold text-green-900 mt-1">Plants for every space</h3>
+                        <p class="text-gray-600 mt-2 leading-relaxed">From leafy houseplants to cheerful bouquets, find
+                            something that feels like you.</p>
+                    </div>
+                    <div
+                        class="bg-green-50 border border-green-200 border-b-4 border-b-green-500 rounded-2xl p-7 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-200">
+                        <div class="flex items-start justify-between">
+                            <div class="h-14 w-14 flex items-center justify-center rounded-2xl bg-white border border-green-200 text-3xl shadow-sm"
+                                aria-hidden="true">📦</div>
+                            <span class="text-4xl font-bold text-green-900" aria-hidden="true">02</span>
+                        </div>
+                        <p class="text-xs text-green-800 font-bold uppercase tracking-wide mt-5">Packed with care</p>
+                        <h3 class="text-xl font-bold text-green-900 mt-1">Safe, careful delivery</h3>
+                        <p class="text-gray-600 mt-2 leading-relaxed">We pack every order with care so your new
+                            favourite arrives ready for its new home.</p>
+                    </div>
+                    <div
+                        class="bg-green-200 border border-green-300 border-b-4 border-b-green-700 rounded-2xl p-7 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-200">
+                        <div class="flex items-start justify-between">
+                            <div class="h-14 w-14 flex items-center justify-center rounded-2xl bg-green-50 border border-green-100 text-3xl shadow-sm"
+                                aria-hidden="true">💬</div>
+                            <span class="text-4xl font-bold text-green-900" aria-hidden="true">03</span>
+                        </div>
+                        <p class="text-xs text-green-700 font-bold uppercase tracking-wide mt-5">Here when you need us
+                        </p>
+                        <h3 class="text-xl font-bold text-green-900 mt-1">Friendly plant help</h3>
+                        <p class="text-gray-600 mt-2 leading-relaxed">Need a little plant advice? Our friendly team is
+                            happy to point you in the right direction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- An editorial note about the Greenden idea -->
+        <section class="bg-gray-50 px-5 py-12 sm:py-14 lg:py-20">
+            <div
+                class="max-w-6xl mx-auto grid lg:grid-cols-5 rounded-3xl overflow-hidden border border-green-200 border-t-4 border-t-green-400 shadow-2xl">
+                <article class="lg:col-span-3 bg-white px-7 py-9 sm:px-10 md:py-12">
+                    <div class="flex items-center">
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-green-900 text-white text-sm font-bold">01</span>
+                        <p class="ml-3 text-green-800 text-xs font-bold uppercase tracking-widest">The Greenden story
+                        </p>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-900 leading-tight mt-5">A little more green,
+                        <span class="text-green-700">with less guesswork.</span></h2>
+                    <div class="w-16 h-1 bg-green-400 rounded-full mt-5"></div>
+                    <p class="text-gray-700 leading-relaxed mt-5">Greenden brings easy-care houseplants, fresh flowers
+                        and thoughtful gifts together in one friendly place. Clear product details help you find a plant
+                        that suits your room, your routine and the amount of light you have.</p>
+                    <p class="text-gray-700 leading-relaxed mt-3">Whether you are choosing your first leafy plant or
+                        sending a bouquet to someone you care about, we want the experience to feel calm and
+                        straightforward—from browsing the collection to finding a little help when you need it.</p>
+                    <a href="products.html"
+                        class="inline-flex items-center mt-6 bg-green-900 text-white font-bold px-5 py-3 rounded-lg shadow-md hover:bg-green-800 transition duration-200">Explore
+                        the collection <span class="ml-2" aria-hidden="true">&rarr;</span></a>
+                </article>
+                <aside
+                    class="relative overflow-hidden lg:col-span-2 bg-gradient-to-br from-green-900 to-green-800 text-white px-7 py-9 sm:px-10 md:py-12">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 rounded-full border-8 border-green-700 opacity-50"
+                        aria-hidden="true"></div>
+                    <p class="relative text-green-300 text-xs font-bold uppercase tracking-widest">The Greenden promise
+                    </p>
+                    <p class="relative text-2xl sm:text-3xl font-bold leading-snug mt-4">Thoughtful plants, chosen for
+                        real homes.</p>
+                    <div class="relative border-t border-green-700 mt-7 pt-5 space-y-4">
+                        <div class="flex items-center">
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-700 text-green-200 text-xs font-bold">01</span>
+                            <p class="ml-3 text-green-50">Easy-care picks for everyday spaces</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-700 text-green-200 text-xs font-bold">02</span>
+                            <p class="ml-3 text-green-50">Clear details before you choose</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-700 text-green-200 text-xs font-bold">03</span>
+                            <p class="ml-3 text-green-50">Friendly help when you need it</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Best sellers -->
+        <section class="bg-green-50 py-10 sm:py-12 lg:py-16">
+            <div
+                class="max-w-6xl mx-auto px-5 sm:px-7 md:px-10 bg-white rounded-3xl border-2 border-green-300 shadow-2xl py-6 sm:py-8 lg:py-10">
+                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                        <p
+                            class="inline-block bg-green-300 text-green-900 font-bold text-sm tracking-wide rounded-full px-4 py-2">
+                            PLANT JOURNAL · COLLECTION 01</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-green-900 mt-4">The Greenden edit</h2>
+                        <p class="text-gray-600 mt-2">Easy-care plants and fresh blooms for bright corners and
+                            thoughtful gifts.</p>
+                    </div>
+                    <a href="products.html"
+                        class="inline-block bg-green-900 text-white font-semibold px-5 py-3 rounded-lg shadow-md mt-6 sm:mt-0 hover:bg-green-800 transition duration-200">Shop
+                        all plants &rarr;</a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 mt-7 md:mt-9">
+                    <a href="products.html#pink-roses"
+                        class="group flex flex-col h-full bg-white border border-green-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-200">
+                        <div class="relative overflow-hidden flex-shrink-0">
+                            <img src="images/home-rose-bouquet.jpg" alt="Close-up of a pale pink rose bouquet"
+                                class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition duration-300">
+                            <span
+                                class="absolute top-3 left-3 bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-full shadow-md">01
+                                / FLOWER BOUQUET</span>
+                        </div>
+                        <div class="p-5 bg-green-900 border-t-4 border-t-green-400 flex-grow flex flex-col">
+                            <h3 class="text-lg font-bold text-white">Pink Rose Bouquet</h3>
+                            <p class="text-green-100 text-sm leading-5 mt-1 h-10">Soft pink blooms, ready to gift.</p>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-gray-700">
+                                <p class="text-white font-semibold">$24.99</p>
+                                <span class="bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-lg">View
+                                    details &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="products.html#peace-lily"
+                        class="group flex flex-col h-full bg-white border border-green-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-200">
+                        <div class="relative overflow-hidden flex-shrink-0">
+                            <img src="images/home-peace-lily.jpg"
+                                alt="Peace lily in a white ceramic pot held in two hands"
+                                class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition duration-300">
+                            <span
+                                class="absolute top-3 left-3 bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-full shadow-md">02
+                                / HOUSEPLANT</span>
+                        </div>
+                        <div class="p-5 bg-green-900 border-t-4 border-t-green-400 flex-grow flex flex-col">
+                            <h3 class="text-lg font-bold text-white">Peace Lily</h3>
+                            <p class="text-green-100 text-sm leading-5 mt-1 h-10">Easy-care leaves for bright rooms.</p>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-gray-700">
+                                <p class="text-white font-semibold">$18.99</p>
+                                <span class="bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-lg">View
+                                    details &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="products.html#pastel-blooms"
+                        class="group flex flex-col h-full bg-white border border-green-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-200">
+                        <div class="relative overflow-hidden flex-shrink-0">
+                            <img src="images/home-pastel-blooms.jpg"
+                                alt="Pastel pink and cream gerbera daisies in a clear vase"
+                                class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition duration-300">
+                            <span
+                                class="absolute top-3 left-3 bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-full shadow-md">03
+                                / FLOWER ARRANGEMENT</span>
+                        </div>
+                        <div class="p-5 bg-green-900 border-t-4 border-t-green-400 flex-grow flex flex-col">
+                            <h3 class="text-lg font-bold text-white">Pastel Bloom Vase</h3>
+                            <p class="text-green-100 text-sm leading-5 mt-1 h-10">Fresh seasonal colour in a vase.</p>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-gray-700">
+                                <p class="text-white font-semibold">$29.99</p>
+                                <span class="bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-lg">View
+                                    details &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="products.html#pink-garden"
+                        class="group flex flex-col h-full bg-white border border-green-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-200">
+                        <div class="relative overflow-hidden flex-shrink-0">
+                            <img src="images/home-pink-geranium.jpg" alt="Bright pink flowering geranium in a pot"
+                                class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition duration-300">
+                            <span
+                                class="absolute top-3 left-3 bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-full shadow-md">04
+                                / FLOWERING PLANT</span>
+                        </div>
+                        <div class="p-5 bg-green-900 border-t-4 border-t-green-400 flex-grow flex flex-col">
+                            <h3 class="text-lg font-bold text-white">Pink Garden Plant</h3>
+                            <p class="text-green-100 text-sm leading-5 mt-1 h-10">Pink blooms for sunny spaces.</p>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-gray-700">
+                                <p class="text-white font-semibold">$16.99</p>
+                                <span class="bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-lg">View
+                                    details &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore and contact callout -->
+        <section class="bg-green-50 px-5 py-16 md:py-20">
+            <div
+                class="max-w-6xl mx-auto grid md:grid-cols-5 bg-green-100 border border-green-200 rounded-3xl overflow-hidden shadow-xl">
+                <div class="relative h-64 sm:h-72 md:h-96 md:col-span-2">
+                    <img src="images/home-gift-bouquet.jpg" alt="White and green flower bouquet wrapped as a gift"
+                        class="absolute inset-0 w-full h-full object-cover object-center">
+                    <div
+                        class="absolute bottom-4 left-4 bg-white border-l-4 border-green-700 text-green-900 px-4 py-3 rounded-xl shadow-lg font-semibold">
+                        A thoughtful gift</div>
+                </div>
+                <div class="flex flex-col justify-center px-7 py-9 sm:px-10 md:col-span-3 md:px-10 md:py-8">
+                    <p
+                        class="inline-block self-start bg-green-100 border border-green-200 text-green-900 rounded-full px-4 py-2 font-bold uppercase tracking-wide text-sm">
+                        A gift that grows</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-green-900 mt-4">Send a little green their way</h2>
+                    <p class="text-gray-700 mt-3 leading-relaxed">From flowering plants to fresh bouquets, find a
+                        thoughtful gift to brighten someone’s space.</p>
+                    <div class="flex flex-col sm:flex-row gap-3 mt-7">
+                        <a href="products.html"
+                            class="inline-block text-center bg-green-900 text-white px-6 py-3 rounded-lg font-bold shadow-md hover:bg-green-800 transition duration-200">Explore
+                            gift ideas</a>
+                        <a href="contact.html"
+                            class="inline-block text-center border-2 border-green-900 text-green-900 px-6 py-3 rounded-lg font-semibold hover:bg-white transition duration-200">Contact
+                            us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared footer -->
+    <footer class="bg-green-900 text-white border-t-8 border-green-400 px-5 py-14 md:py-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid gap-10 md:grid-cols-3">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold">Greenden.</a>
+                    <p class="text-green-100 mt-2">Make room for a little more green.</p>
+                    <p class="text-green-200 text-sm mt-3">Thoughtful plants for happier homes.</p>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold text-green-300">Explore</h2>
+                    <ul class="mt-3 space-y-2">
+                        <li><a href="index.html"
+                                class="text-green-100 hover:text-white transition duration-200">Home</a></li>
+                        <li><a href="products.html"
+                                class="text-green-100 hover:text-white transition duration-200">Products</a></li>
+                        <li><a href="contact.html"
+                                class="text-green-100 hover:text-white transition duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold text-green-300">Need a hand?</h2>
+                    <p class="text-green-100 mt-3 leading-relaxed">We are happy to help you find the right plant for
+                        your space.</p>
+                    <a href="contact.html"
+                        class="inline-block mt-4 bg-green-300 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-green-200 transition duration-200">Talk
+                        to us &rarr;</a>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-sm text-gray-300">
+                <p>&copy; 2026 Greenden. Made with care.</p>
+                <p>Grow something lovely today.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
