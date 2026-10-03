@@ -2,6 +2,8 @@
 
 Greenden is a student front-end project for discovering houseplants, flowers, and thoughtful gifts. It features a calm forest-green and mint design, responsive layouts, and locally stored images.
 
+🌿 **Live website:** [Visit Greenden](https://abdulrahman077.github.io/Greenden-Tailwind/)
+
 ## Pages
 
 - **Home** (`index.html`) — Introduction, collection highlights, and plant-care information.
