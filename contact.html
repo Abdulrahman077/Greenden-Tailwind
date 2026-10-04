@@ -60,15 +60,16 @@
                         <p class="text-green-700 text-sm font-bold uppercase tracking-widest">We’re listening</p>
                         <h2 class="text-2xl sm:text-3xl font-bold text-green-900 mt-2">Send us a message</h2>
                         <p class="text-gray-600 mt-2 leading-relaxed">Fill in the details below and tell us a little about what you need.</p>
-                        <form class="mt-6">
+                        <form id="contact-form" class="mt-6">
                             <div class="grid sm:grid-cols-2 gap-5">
                                 <div><label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="How should we address you?" class="w-full border border-green-200 bg-green-50 rounded-xl px-4 py-3 focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-200"></div>
                                 <div><label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email address</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" class="w-full border border-green-200 bg-green-50 rounded-xl px-4 py-3 focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-200"></div>
                             </div>
                             <div class="mt-5"><label for="topic" class="block text-sm font-semibold text-gray-700 mb-2">What can we help with?</label><select id="topic" name="topic" class="w-full border border-green-200 bg-green-50 rounded-xl px-4 py-3 focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-200"><option>Choosing a plant</option><option>Plant care</option><option>Flowers and gifts</option><option>Order support</option><option>Something else</option></select></div>
-                            <div class="mt-5"><label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Your message</label><textarea id="message" name="message" rows="5" required placeholder="Tell us about your space, your question or the order you need help with..." class="w-full border border-green-200 bg-green-50 rounded-xl px-4 py-3 focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-200"></textarea></div>
-                            <div class="flex flex-col sm:flex-row sm:items-center gap-4 mt-6"><button type="button" class="bg-green-900 text-white px-6 py-3 rounded-lg shadow-md font-bold hover:bg-green-800 transition duration-200">Send your note &rarr;</button><p class="text-xs text-gray-500 leading-relaxed">This student project is a static demo, so the form is for display only.</p></div>
+                            <div class="mt-5"><label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Your message</label><textarea id="message" name="message" rows="5" maxlength="500" required placeholder="Tell us about your space, your question or the order you need help with..." class="w-full border border-green-200 bg-green-50 rounded-xl px-4 py-3 focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-200"></textarea><p id="message-count" class="text-xs text-gray-500 mt-2" aria-live="polite">0 / 500 characters</p></div>
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-4 mt-6"><button type="submit" class="bg-green-900 text-white px-6 py-3 rounded-lg shadow-md font-bold hover:bg-green-800 transition duration-200">Send your note &rarr;</button><p class="text-xs text-gray-500 leading-relaxed">This student project is a static demo, so the form does not send messages.</p></div>
                         </form>
+                        <p id="form-status" class="hidden bg-green-50 border border-green-200 text-green-900 rounded-xl p-4 mt-4" role="status" aria-live="polite"></p>
                         <div class="bg-green-50 border border-green-200 border-l-4 border-l-green-400 rounded-xl p-4 mt-6">
                             <p class="text-green-800 text-xs font-bold uppercase tracking-widest">A detail that helps</p>
                             <p class="text-gray-600 text-sm leading-relaxed mt-2">Mention how much light your room gets and where you plan to place your plant.</p>
@@ -103,5 +104,6 @@
             <div class="border-t border-green-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-sm text-green-100"><p>&copy; 2026 Greenden. Made with care.</p><p>Grow something lovely today.</p></div>
         </div>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
