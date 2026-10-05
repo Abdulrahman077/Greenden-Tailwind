@@ -52,6 +52,27 @@
             <div class="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-widest text-green-700">Browse by mood</p><p class="text-green-900 font-semibold mt-1">A small refresh can start anywhere.</p></div><div class="flex flex-wrap gap-2"><a href="#houseplants" class="bg-green-100 text-green-900 border border-green-200 px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-300 transition duration-200">Houseplants &rarr;</a><a href="#flowers" class="bg-green-100 text-green-900 border border-green-200 px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-300 transition duration-200">Flowers &amp; gifts &rarr;</a><a href="contact.html" class="bg-white text-green-900 border border-green-200 px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-50 transition duration-200">Ask us &rarr;</a></div></div>
         </section>
 
+        <section class="bg-green-50 px-5 py-6 border-b border-green-100" aria-label="Search and filter the collection">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+                <div class="w-full lg:max-w-md">
+                    <label for="product-search" class="block text-sm font-bold text-green-900 mb-2">Find something you love</label>
+                    <div class="flex gap-2">
+                        <input id="product-search" type="search" autocomplete="off" placeholder="Search plants, flowers or gifts..." class="min-w-0 flex-grow border border-green-200 bg-white rounded-xl px-4 py-3 focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-200">
+                        <button id="clear-search" type="button" class="flex-shrink-0 border border-green-200 bg-white text-green-900 px-4 py-3 rounded-xl font-semibold hover:bg-green-100 transition duration-200">Clear</button>
+                    </div>
+                </div>
+                <div>
+                    <p class="block text-sm font-bold text-green-900 mb-2">Show me</p>
+                    <div class="flex flex-wrap gap-2" role="group" aria-label="Filter products by type">
+                        <button type="button" data-product-filter="all" aria-pressed="true" class="bg-green-900 border border-green-200 text-white px-4 py-2 rounded-full text-sm font-semibold transition duration-200">Everything</button>
+                        <button type="button" data-product-filter="houseplants" aria-pressed="false" class="bg-white border border-green-200 text-green-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-100 transition duration-200">Houseplants</button>
+                        <button type="button" data-product-filter="flowers" aria-pressed="false" class="bg-white border border-green-200 text-green-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-100 transition duration-200">Flowers &amp; gifts</button>
+                    </div>
+                </div>
+                <p id="product-results" class="text-sm font-semibold text-green-800" role="status" aria-live="polite">Showing all 20 picks</p>
+            </div>
+        </section>
+
         <section id="houseplants" class="bg-green-50 px-5 pt-12 pb-10 md:pt-16 md:pb-12">
             <div class="max-w-6xl mx-auto">
                 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4"><div><p class="inline-block bg-green-300 text-green-900 px-4 py-2 rounded-full font-bold uppercase tracking-wide text-sm">01 / Leafy companions</p><h2 class="text-3xl md:text-4xl font-bold text-green-900 mt-4">Make room for green</h2><p class="text-gray-600 text-lg mt-2">Easy-care favourites for shelves, sunny corners and the spaces in between.</p></div><p class="text-green-800 font-semibold">12 houseplants to explore</p></div>
@@ -103,10 +124,11 @@
     <div class="relative overflow-hidden flex-shrink-0"><img src="images/image 10.png" alt="Trailing green pothos being watered beside a bright window" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition duration-300"><span class="absolute top-3 left-3 bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-full shadow-md">TRAILING GREEN</span></div>
     <div class="p-5 bg-green-900 border-t-4 border-green-400 text-white flex-grow flex flex-col"><p class="text-green-300 text-xs font-bold uppercase tracking-wide">Made for a high shelf</p><h3 class="font-bold text-lg mt-2">Golden Pothos</h3><p class="text-green-100 text-sm leading-relaxed mt-2">Easy-going trailing leaves soften shelves and bright corners.</p><div class="border-t border-green-700 mt-auto pt-4 flex items-center justify-between gap-2"><span class="font-bold text-lg">$18.99</span><span class="bg-green-300 text-green-900 px-3 py-2 rounded-lg text-xs font-bold group-hover:bg-white transition">Ask us &rarr;</span></div></div>
 </a></div>
+                <p id="no-houseplants" class="hidden bg-white border border-green-200 rounded-xl p-5 mt-6 text-green-900" role="status">No houseplants match that search. Try a different word.</p>
             </div>
         </section>
 
-        <section class="bg-green-100 px-5 py-10 md:py-12">
+        <section id="field-guide" class="bg-green-100 px-5 py-10 md:py-12">
             <div class="max-w-6xl mx-auto">
                 <div class="max-w-2xl"><p class="inline-block bg-white border border-green-200 text-green-900 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide">A little field guide</p><h2 class="text-3xl md:text-4xl font-bold text-green-900 mt-4">Choose for your corner, not just the photo.</h2><p class="text-gray-700 leading-relaxed mt-3">A plant is happiest when its new spot suits it. These three small checks make choosing feel simple.</p></div>
                 <div class="grid md:grid-cols-3 gap-5 mt-8">
@@ -152,6 +174,7 @@
     <div class="relative overflow-hidden flex-shrink-0"><img src="images/bestseller4.png" alt="Pink flowering plant in a grey pot on an outdoor table" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition duration-300"><span class="absolute top-3 left-3 bg-green-300 text-green-900 text-xs font-bold px-3 py-2 rounded-full shadow-md">GARDEN PICK</span></div>
     <div class="p-5 bg-green-900 border-t-4 border-green-400 text-white flex-grow flex flex-col"><p class="text-green-300 text-xs font-bold uppercase tracking-wide">Made for sunny days</p><h3 class="font-bold text-lg mt-2">Outdoor Bloom Pot</h3><p class="text-green-100 text-sm leading-relaxed mt-2">A cheerful flowering plant to add colour to a patio or doorstep.</p><div class="border-t border-green-700 mt-auto pt-4 flex items-center justify-between gap-2"><span class="font-bold text-lg">$17.99</span><span class="bg-green-300 text-green-900 px-3 py-2 rounded-lg text-xs font-bold group-hover:bg-white transition">Ask us &rarr;</span></div></div>
 </a></div>
+                <p id="no-flowers" class="hidden bg-green-50 border border-green-200 rounded-xl p-5 mt-6 text-green-900" role="status">No flowers or gifts match that search. Try a different word.</p>
             </div>
         </section>
 
@@ -168,5 +191,6 @@
             <div class="border-t border-green-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-sm text-green-100"><p>&copy; 2026 Greenden. Made with care.</p><p>Grow something lovely today.</p></div>
         </div>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
